@@ -7,6 +7,7 @@ package Aplikasi;
 
 import java.io.IOException;
 import java.util.logging.Level;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -30,240 +31,82 @@ public class About extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLayeredPane1 = new javax.swing.JLayeredPane();
+        jLayeredPane2 = new javax.swing.JLayeredPane();
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        ig = new javax.swing.JLabel();
-        ig1 = new javax.swing.JLabel();
-        pnok = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
+        bg = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setUndecorated(true);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLayeredPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLayeredPane1.setPreferredSize(new java.awt.Dimension(70, 25));
+        jLayeredPane1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLayeredPane1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLayeredPane1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLayeredPane1MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
+        jLayeredPane1.setLayout(jLayeredPane1Layout);
+        jLayeredPane1Layout.setHorizontalGroup(
+            jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 76, Short.MAX_VALUE)
+        );
+        jLayeredPane1Layout.setVerticalGroup(
+            jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 25, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(387, 253, 76, -1));
+
+        jLayeredPane2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        javax.swing.GroupLayout jLayeredPane2Layout = new javax.swing.GroupLayout(jLayeredPane2);
+        jLayeredPane2.setLayout(jLayeredPane2Layout);
+        jLayeredPane2Layout.setHorizontalGroup(
+            jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 53, Short.MAX_VALUE)
+        );
+        jLayeredPane2Layout.setVerticalGroup(
+            jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 15, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jLayeredPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(428, 195, 53, 15));
 
         jPanel1.setBackground(new java.awt.Color(0, 77, 64));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 204, 51));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("TENTANG SAYA");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 200, -1));
+        bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/vis1.png"))); // NOI18N
+        jPanel1.add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Tw Cen MT", 0, 22)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 204, 51));
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("ANDRI ILHAM");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 85, 200, -1));
-
-        jLabel6.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 204, 51));
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("17 111 322");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 121, 200, -1));
-
-        jLabel7.setFont(new java.awt.Font("Tw Cen MT", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 204, 51));
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_WhatsApp_18px.png"))); // NOI18N
-        jLabel7.setText("085 314 402 108");
-        jLabel7.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 172, 200, -1));
-
-        ig.setFont(new java.awt.Font("Tw Cen MT", 0, 16)); // NOI18N
-        ig.setForeground(new java.awt.Color(255, 204, 51));
-        ig.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ig.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_Instagram_18px_1.png"))); // NOI18N
-        ig.setText("adriilh");
-        ig.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        ig.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                igMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                igMouseEntered(evt);
-            }
-        });
-        jPanel1.add(ig, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 194, 200, -1));
-
-        ig1.setFont(new java.awt.Font("Tw Cen MT", 0, 16)); // NOI18N
-        ig1.setForeground(new java.awt.Color(255, 204, 51));
-        ig1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ig1.setText("IFRP 17B");
-        ig1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        ig1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ig1MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                ig1MouseEntered(evt);
-            }
-        });
-        jPanel1.add(ig1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 143, 200, -1));
-
-        pnok.setBackground(new java.awt.Color(0, 121, 107));
-        pnok.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        pnok.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                pnokMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                pnokMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                pnokMouseExited(evt);
-            }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                pnokMousePressed(evt);
-            }
-        });
-
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 204, 51));
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("BACK");
-
-        javax.swing.GroupLayout pnokLayout = new javax.swing.GroupLayout(pnok);
-        pnok.setLayout(pnokLayout);
-        pnokLayout.setHorizontalGroup(
-            pnokLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 77, Short.MAX_VALUE)
-        );
-        pnokLayout.setVerticalGroup(
-            pnokLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-        );
-
-        jPanel1.add(pnok, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, -1, -1));
-
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel4.setText("CREDITS");
-
-        jLabel5.setText("ALLAH SWT");
-
-        jLabel8.setText("STT BANDUNG");
-
-        jLabel9.setText("Bpk. Andri Nugraha (Dosen VISPRO)");
-
-        jLabel10.setText("Stack OverFlow, GitHub, UnitsOf");
-
-        jLabel11.setText("TENTANG APLIKASI");
-
-        jLabel12.setText("Versi 0.1 Alpha");
-
-        jLabel13.setText("Tugas Vispro Semester 3");
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel11)
-                    .addComponent(jLabel12)
-                    .addComponent(jLabel13))
-                .addContainerGap(69, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel9)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel10)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel11)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel12)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel13)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 510, 320));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void igMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_igMouseClicked
-        String url="https://www.instagram.com/andriilh/";
-        try {
-            java.awt.Desktop.getDesktop().browse(java.net.URI.create(url));
-        } catch (IOException ex) {
-            java.util.logging.Logger.getLogger(About.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_igMouseClicked
+    private void jLayeredPane1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLayeredPane1MouseEntered
+        ImageIcon AS = new ImageIcon(getClass().getResource("/icons/vis2.png"));
+        bg.setIcon(AS);
+    }//GEN-LAST:event_jLayeredPane1MouseEntered
 
-    private void igMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_igMouseEntered
+    private void jLayeredPane1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLayeredPane1MouseExited
+        ImageIcon AS = new ImageIcon(getClass().getResource("/icons/vis1.png"));
+        bg.setIcon(AS);
+    }//GEN-LAST:event_jLayeredPane1MouseExited
 
-    }//GEN-LAST:event_igMouseEntered
-
-    private void ig1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ig1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ig1MouseClicked
-
-    private void ig1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ig1MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ig1MouseEntered
-
-    private void pnokMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnokMouseClicked
-
+    private void jLayeredPane1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLayeredPane1MouseClicked
         this.dispose();
-
-    }//GEN-LAST:event_pnokMouseClicked
-
-    private void pnokMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnokMouseEntered
-        pnok.setBackground(new java.awt.Color(255,204,102));
-        jLabel2.setForeground(new java.awt.Color(0,121,107));
-    }//GEN-LAST:event_pnokMouseEntered
-
-    private void pnokMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnokMouseExited
-        pnok.setBackground(new java.awt.Color(0,121,107));
-        jLabel2.setForeground(new java.awt.Color(255,204,51));
-    }//GEN-LAST:event_pnokMouseExited
-
-    private void pnokMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnokMousePressed
-        pnok.setBackground(new java.awt.Color(255,104,53));
-        jLabel2.setForeground(new java.awt.Color(0,121,107));
-    }//GEN-LAST:event_pnokMousePressed
+    }//GEN-LAST:event_jLayeredPane1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -301,23 +144,9 @@ public class About extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel ig;
-    private javax.swing.JLabel ig1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel bg;
+    private javax.swing.JLayeredPane jLayeredPane1;
+    private javax.swing.JLayeredPane jLayeredPane2;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel pnok;
     // End of variables declaration//GEN-END:variables
 }
