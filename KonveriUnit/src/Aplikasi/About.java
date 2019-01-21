@@ -196,7 +196,7 @@ public class About extends javax.swing.JFrame {
     }//GEN-LAST:event_gedeMouseExited
 
     private void gedeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gedeMouseClicked
-        String url="https://www.instagram.com/andriih/";
+        String url="https://www.instagram.com/andriilh/";
         try {
             java.awt.Desktop.getDesktop().browse(java.net.URI.create(url));
         } catch (IOException ex) {
