@@ -57,12 +57,6 @@ public class App extends javax.swing.JFrame {
             
             kon1.setSelectedIndex(2);
             kon2.setSelectedIndex(3);
-//            KeyEvent e = null;
-//            char ch = e.getKeyChar();
-//            
-//            if(Character.isDigit(ch)){
-//                e.consume();
-//            }
             
         }
         if(kon.getText().equals("SUHU")){
