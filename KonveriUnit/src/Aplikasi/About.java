@@ -20,6 +20,9 @@ public class About extends javax.swing.JFrame {
      */
     public About() {
         initComponents();
+        
+        gede.setVisible(false);
+        nm2.setVisible(false);
     }
 
     /**
@@ -32,7 +35,10 @@ public class About extends javax.swing.JFrame {
     private void initComponents() {
 
         jLayeredPane1 = new javax.swing.JLayeredPane();
-        jLayeredPane2 = new javax.swing.JLayeredPane();
+        kecil = new javax.swing.JLayeredPane();
+        gede = new javax.swing.JLayeredPane();
+        nm1 = new javax.swing.JLayeredPane();
+        nm2 = new javax.swing.JLayeredPane();
         bg = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
 
@@ -67,20 +73,88 @@ public class About extends javax.swing.JFrame {
 
         getContentPane().add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(387, 253, 76, -1));
 
-        jLayeredPane2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        kecil.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        kecil.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                kecilMouseEntered(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jLayeredPane2Layout = new javax.swing.GroupLayout(jLayeredPane2);
-        jLayeredPane2.setLayout(jLayeredPane2Layout);
-        jLayeredPane2Layout.setHorizontalGroup(
-            jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout kecilLayout = new javax.swing.GroupLayout(kecil);
+        kecil.setLayout(kecilLayout);
+        kecilLayout.setHorizontalGroup(
+            kecilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 53, Short.MAX_VALUE)
         );
-        jLayeredPane2Layout.setVerticalGroup(
-            jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        kecilLayout.setVerticalGroup(
+            kecilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 15, Short.MAX_VALUE)
         );
 
-        getContentPane().add(jLayeredPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(428, 195, 53, 15));
+        getContentPane().add(kecil, new org.netbeans.lib.awtextra.AbsoluteConstraints(428, 195, 53, 15));
+
+        gede.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        gede.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                gedeMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                gedeMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout gedeLayout = new javax.swing.GroupLayout(gede);
+        gede.setLayout(gedeLayout);
+        gedeLayout.setHorizontalGroup(
+            gedeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        gedeLayout.setVerticalGroup(
+            gedeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 40, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(gede, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 190, 100, 40));
+
+        nm1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        nm1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                nm1MouseEntered(evt);
+            }
+        });
+
+        javax.swing.GroupLayout nm1Layout = new javax.swing.GroupLayout(nm1);
+        nm1.setLayout(nm1Layout);
+        nm1Layout.setHorizontalGroup(
+            nm1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 70, Short.MAX_VALUE)
+        );
+        nm1Layout.setVerticalGroup(
+            nm1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 12, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(nm1, new org.netbeans.lib.awtextra.AbsoluteConstraints(411, 128, 70, 12));
+
+        nm2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        nm2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                nm2MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout nm2Layout = new javax.swing.GroupLayout(nm2);
+        nm2.setLayout(nm2Layout);
+        nm2Layout.setHorizontalGroup(
+            nm2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 130, Short.MAX_VALUE)
+        );
+        nm2Layout.setVerticalGroup(
+            nm2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 30, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(nm2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 120, 130, 30));
 
         bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/vis1.png"))); // NOI18N
         getContentPane().add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -106,6 +180,43 @@ public class About extends javax.swing.JFrame {
     private void jLayeredPane1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLayeredPane1MouseClicked
         this.dispose();
     }//GEN-LAST:event_jLayeredPane1MouseClicked
+
+    private void kecilMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_kecilMouseEntered
+        ImageIcon AS = new ImageIcon(getClass().getResource("/icons/vis3.png"));
+        bg.setIcon(AS);
+        gede.setVisible(true);
+        kecil.setVisible(false);
+    }//GEN-LAST:event_kecilMouseEntered
+
+    private void gedeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gedeMouseExited
+        ImageIcon AS = new ImageIcon(getClass().getResource("/icons/vis1.png"));
+        bg.setIcon(AS);
+        gede.setVisible(false);
+        kecil.setVisible(true);
+    }//GEN-LAST:event_gedeMouseExited
+
+    private void gedeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gedeMouseClicked
+        String url="https://www.instagram.com/andriih/";
+        try {
+            java.awt.Desktop.getDesktop().browse(java.net.URI.create(url));
+        } catch (IOException ex) {
+            java.util.logging.Logger.getLogger(About.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_gedeMouseClicked
+
+    private void nm1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nm1MouseEntered
+       ImageIcon AS = new ImageIcon(getClass().getResource("/icons/vis4.png"));
+       bg.setIcon(AS);
+       nm2.setVisible(true);
+       nm1.setVisible(false);
+    }//GEN-LAST:event_nm1MouseEntered
+
+    private void nm2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nm2MouseExited
+        ImageIcon AS = new ImageIcon(getClass().getResource("/icons/vis1.png"));
+       bg.setIcon(AS);
+       nm2.setVisible(false);
+       nm1.setVisible(true);
+    }//GEN-LAST:event_nm2MouseExited
 
     /**
      * @param args the command line arguments
@@ -144,8 +255,11 @@ public class About extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel bg;
+    private javax.swing.JLayeredPane gede;
     private javax.swing.JLayeredPane jLayeredPane1;
-    private javax.swing.JLayeredPane jLayeredPane2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLayeredPane kecil;
+    private javax.swing.JLayeredPane nm1;
+    private javax.swing.JLayeredPane nm2;
     // End of variables declaration//GEN-END:variables
 }
